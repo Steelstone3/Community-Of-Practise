@@ -42,7 +42,7 @@ Therefore we can define software as a flexible logical system.
 
 Hardware is comprised of two sub-words
 
-> Soft - to mean inflexable
+> Hard - to mean inflexable
 >
 > Ware - to mean a logical system
 
