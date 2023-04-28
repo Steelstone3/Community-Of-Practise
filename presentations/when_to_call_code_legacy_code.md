@@ -82,6 +82,8 @@ If you upgrade the tech stack and the tests pass you have a 99% certainty that i
 
 Alternative implementations and refactoring can be done to the code and provided the tests pass again 99% certainty all will work when you run it for real.
 
-This makes for software that is no longer legacy as we have the confidence to change it.
+## Conclussion
+
+Well tested code using the testing pryamid makes for software that is no longer legacy as we have the confidence to change it.
 
 ## Questions & Discussion
