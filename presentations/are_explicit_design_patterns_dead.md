@@ -91,7 +91,7 @@ The simple list pattern simply won't compile for a missing case and is also simp
 
 ## Extending The Examples
 
-What if the requirements change so that book titles need to be compared but the authors don't.
+What if the requirements change so that book titles need to be sorted acsending and authors decending.
 
 ### Extended Implicit Pattern Implementation Example
 
