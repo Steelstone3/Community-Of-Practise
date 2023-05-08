@@ -144,7 +144,9 @@ The 4 patterns used however have all been implemented implicitly.
 
 *"You can create a solution a million times over without ever doing it the same way twice"* - Design Patterns: Elements of Reusable Object-Oriented Software (1994) (Statement origin 1977 1 year after smalltalk 76)
 
-Returning to this statement. With modern C# I am calling 🐂$*!" ont his one. You can create a solution a million times the same way twice if you use implict patterns that already exist within C#.
+Returning to this statement. With modern C# I am calling 🐂$&!" ont his one. You can create a solution a million times the same way twice if you use implict patterns that already exist within C#. This is to say that whilst explict patterns are dead implicit ones within the language framework, libraries and syntax live on.
+
+That said some explicit creational patterns live on such as factory methods and builder patterns and we can still benefit from learning how to implement these patterns ourselves for our own education as developers.
 
 ## Takeaways
 
