@@ -28,6 +28,13 @@ Main() {
     Console.WriteLine(Format("Design Patterns", new[] { "Erich Gamma", "Richard Helm", "Ralph Johnson" }));
 }
 ```
+#### Output
+
+> One Thousand and One Nights
+>
+> Domain-Driven Design by Eric Evans
+>
+> Design Patterns by Erich Gamma, Richard Helm and Ralph Johnson
 
 ### Explict Pattern Implementation Example
 
