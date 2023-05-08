@@ -4,7 +4,7 @@
 
 Consider the following quote for justification for explicit complex design patterns...
 
-*"You can create a solution a million times over without ever doing it the same way twice"* - Design Patterns: Elements of Reusable Object-Oriented Software (1994)
+*"You can create a solution a million times over without ever doing it the same way twice"* - Design Patterns: Elements of Reusable Object-Oriented Software (1994) (Statement origin 1977 1 year after smalltalk 76)
 
 This book was written at the infancy of a lot of modern languages that we use today such as Java which was released in 1995 and Visual Basic the predecessor to C#.
 
@@ -142,7 +142,7 @@ The 4 patterns used however have all been implemented implicitly.
 
 ## Summary
 
-*"You can create a solution a million times over without ever doing it the same way twice"* - Design Patterns: Elements of Reusable Object-Oriented Software (1994)
+*"You can create a solution a million times over without ever doing it the same way twice"* - Design Patterns: Elements of Reusable Object-Oriented Software (1994) (Statement origin 1977 1 year after smalltalk 76)
 
 Returning to this statement. With modern C# I am calling 🐂$*!" ont his one. You can create a solution a million times the same way twice if you use implict patterns that already exist within C#.
 
