@@ -12,7 +12,7 @@ So does the beginning statement hold true anymore for modern C#? Or have we move
 
 ## Examples
 
-Format a book signature that contains a title with an unknown amount of authors returning a string using the iterator pattern.
+Format a book signature that contains a title with an unknown amount of authors returning a string.
 
 ### Example Usage
 
