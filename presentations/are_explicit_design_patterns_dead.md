@@ -28,6 +28,7 @@ Main() {
     Console.WriteLine(Format("Design Patterns", new[] { "Erich Gamma", "Richard Helm", "Ralph Johnson" }));
 }
 ```
+
 #### Output
 
 > One Thousand and One Nights
