@@ -44,11 +44,15 @@ Not all animals walk, run, dig, crawl, swim, play fetch or even breath
 
 Here's one possible solution
 
-![Almost Composition](../assests/the_failures_of_inheritance_4.svg)
+![Wet Code Minimal Inheritance](../assests/the_failures_of_inheritance_4.svg)
 
 As demonstrated this is a tough one to refactor whilst keeping the same class hierarchy. This refactor can be taken further but it increasingly abstracts the problem.
 
-For example a class containing walk and run could be used for Dog and Cat but then you would need a second class for crawl which couldn't be reused for Dog and Cat (multi-inheritance) but could for Seal and Mole
+### A Better Way
+
+For example a class containing walk and run could be used for Dog and Cat but then you would need a second class for crawl which couldn't be reused for Dog and Cat (multi-inheritance) but could for Seal and Mole. For this we can use interfaces and get closer to our end goal of modelling animals. However our code would still be wet.
+
+![Better Inheritance](../assests/the_failures_of_inheritance_5.svg)
 
 ### Analysis Of Inheritance
 
@@ -67,8 +71,6 @@ So what we have above is a conveluted mess. The focus on abstraction has taken p
 ### Composition
 
 In the lense of what we are looking at here composition would define common behaviours as interfaces. C# supports mutiple interface inheritance.
-
-![Composition](../assests/the_failures_of_inheritance_5.svg)
 
 ![Composition](../assests/the_failures_of_inheritance_6.svg)
 
