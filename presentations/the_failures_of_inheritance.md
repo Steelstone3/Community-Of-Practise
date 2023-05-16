@@ -68,6 +68,83 @@ So what we have above is a conveluted mess. The focus on abstraction has taken p
 
 In the lense of what we are looking at here composition would define common behaviours as interfaces. C# supports mutiple interface inheritance.
 
+@startuml
+
+interface IName{
+    +name: string
+    +numberOfAppendages: uint
+}
+
+interface ICrawl{
+    +crawl(): void
+}
+
+interface IBreath{
+    +breath(): void
+}
+
+interface ISwim{
+    +swim(): void
+}
+
+interface IFetch{
+    +fetch(): void
+}
+
+interface IDigger{
+    +dig(): void
+}
+
+interface IMobile{
+    +walk(): void
+    +run(): void
+}
+
+class Dog{
+    -name: IName
+}
+
+class Cat{
+    -name: IName
+}
+
+class Mole{
+    -name: IName
+}
+
+class Worm{
+    -name: IName
+}
+
+class Seal{
+    -name: IName
+}
+
+class WildSeal{
+    -name: IName
+}
+
+ISwim <|-- IFetch
+IBreath <|-- IMobile
+ICrawl <|-- IMobile
+ICrawl <|-- IDigger
+
+IMobile <|-- Dog
+IFetch <|-- Dog
+IDigger <|-- Dog
+IMobile <|-- Cat
+IDigger <|-- Mole
+IBreath <|-- Mole
+IBreath <|-- Seal
+ICrawl <|-- Seal
+IFetch <|-- Seal
+ISwim <|-- WildSeal
+ICrawl <|-- WildSeal
+IBreath <|-- WildSeal
+IDigger <|-- Worm
+
+@enduml
+
 ![Composition](../assests/the_failures_of_inheritance_5.svg)
 
 Whilst this may look more chaotic it is clear that this approach has increased flexiblity and less abstraction allowing for better focus on the coding problem at hand.
