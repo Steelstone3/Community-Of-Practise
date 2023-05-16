@@ -50,7 +50,9 @@ As demonstrated this is a tough one to refactor whilst keeping the same class hi
 
 ### A Better Way
 
-For example a class containing walk and run could be used for Dog and Cat but then you would need a second class for crawl which couldn't be reused for Dog and Cat (multi-inheritance) but could for Seal and Mole. For this we can use interfaces and get closer to our end goal of modelling animals. However our code would still be wet.
+For example a class containing walk and run could be used for Dog and Cat but then you would need a second class for crawl which couldn't be reused for Dog and Cat (multi-inheritance) but could for Seal and Mole.
+
+For this we can use interfaces and get closer to our end goal of modelling animals. However our code would still be wet.
 
 ![Better Inheritance](../assests/the_failures_of_inheritance_5.svg)
 
