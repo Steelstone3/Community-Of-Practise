@@ -80,7 +80,7 @@ In the lense of what we are looking at here composition would define common beha
 
 ![Composition](../assests/the_failures_of_inheritance_6.svg)
 
-In this example here we can simply add and remove the functionality that each animal has with its respective components.
+In this example here we can simply add and remove the functionality that each animal has with its respective components. Each component can have many concrete implementations or default implementations that can be subsititued into each class providing maximum re-use and flexibility to the design.
 
 ## Summary
 
