@@ -70,6 +70,85 @@ In the lense of what we are looking at here composition would define common beha
 
 ![Composition](../assests/the_failures_of_inheritance_5.svg)
 
+@startuml
+
+interface IName{
+    +name: string
+    +numberOfAppendages: uint
+}
+
+interface ICrawl{
+    +crawl(): void
+}
+
+interface IBreath{
+    +breath(): void
+}
+
+interface ISwim{
+    +swim(): void
+}
+
+interface IFetch{
+    +fetch(): void
+}
+
+interface IDigger{
+    +dig(): void
+}
+
+interface IMobile{
+    +walk(): void
+    +run(): void
+}
+
+class Dog{
+    -name: IName
+    +mobile: IMobile
+    +fetch: IFetch
+    +digger: IDigger
+}
+
+class Cat{
+    -name: IName
+    +mobile: IMobile
+}
+
+class Mole{
+    -name: IName
+    +digger: IDigger
+    +breath: IBreath
+}
+
+class Worm{
+    -name: IName
+    +digger: IDigger
+}
+
+class Seal{
+    -name: IName
+    +swim: ISwim
+    +breath: IBreath
+    +crawl: ICrawl
+    +fetch: IFetch
+}
+
+class WildSeal{
+    -name: IName
+    +swim: ISwim
+    +breath: IBreath
+    +crawl: ICrawl
+}
+
+ISwim <|-- IFetch
+IBreath <|-- IMobile
+ICrawl <|-- IMobile
+ICrawl <|-- IDigger
+
+@enduml
+
+![Composition](../assests/the_failures_of_inheritance_6.svg)
+
 Whilst this may look more chaotic it is clear that this approach has increased flexiblity and less abstraction allowing for better focus on the coding problem at hand.
 
 For example should a animal that can't swim but can fetch be added to the model we would simply change IFetcher to stop inheriting from ISwimmer and change both Dog and Seal to use both IFetcher and ISwimmer.
