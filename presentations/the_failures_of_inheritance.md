@@ -2,7 +2,9 @@
 
 ## Introduction
 
-Introduce the concept behind inheritance and the theory behind it.
+Inheritance provides a heirarchical structure and is designed to model the real world. The commonly used example is "Animals"
+
+
 
 ## Downsides
 
