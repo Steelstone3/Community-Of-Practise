@@ -56,6 +56,10 @@ For this we can use interfaces and get closer to our end goal of modelling anima
 
 ![Better Inheritance](../assests/the_failures_of_inheritance_5.svg)
 
+Whilst this may look more chaotic it is clear that this approach has increased flexiblity and less abstraction allowing for better focus on the coding problem at hand.
+
+For example should a animal that can't swim but can fetch be added to the model we would simply change IFetcher to stop inheriting from ISwimmer and change both Dog and Seal to use both IFetcher and ISwimmer. However this is still reliant on "perfect design" that comes with inheritance.
+
 ### Analysis Of Inheritance
 
 The behaviour of fetch could not take advantage of class hierarchy for example as either all swimming animals would have to be able to play fetch... which wild seals can't or all fetching animals would have to be able to swim.
@@ -76,9 +80,7 @@ In the lense of what we are looking at here composition would define common beha
 
 ![Composition](../assests/the_failures_of_inheritance_6.svg)
 
-Whilst this may look more chaotic it is clear that this approach has increased flexiblity and less abstraction allowing for better focus on the coding problem at hand.
-
-For example should a animal that can't swim but can fetch be added to the model we would simply change IFetcher to stop inheriting from ISwimmer and change both Dog and Seal to use both IFetcher and ISwimmer.
+In this example here we can simply add and remove the functionality that each animal has with its respective components.
 
 ## Summary
 
