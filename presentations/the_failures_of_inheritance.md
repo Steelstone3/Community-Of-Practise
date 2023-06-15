@@ -4,7 +4,7 @@
 
 Inheritance provides a heirarchical structure and is designed to model the real world. The commonly used example is "Animals" so we will use this as a quick explanation
 
-![Animals Diagram](../assests/the_failures_of_inheritance_1.svg)
+![Animals Diagram](../assets/the_failures_of_inheritance/the_failures_of_inheritance_1.svg)
 
 In this UML class diagram we can see that Dog, Cat and Worm all inherit from Animal. This includes states and behaviours.
 
@@ -20,13 +20,13 @@ It is when we come to the attributes (have-a) and behaviours of class structures
 
 Taking the first example a design assumption could be made by a developer that most animals will have similar attributes and behaviours. This means our sub-types will adopt these attributes and behaviours (extension).
 
-![Quick Example](../assests/the_failures_of_inheritance_2.svg)
+![Quick Example](../assets/the_failures_of_inheritance/the_failures_of_inheritance_2.svg)
 
 All fine so far. Dogs and Cats have a name, legs can walk, run and crawl.
 
 Lets make it interesting and lazily extend the behaviours of Animal and see how well this model keeps working.
 
-![Violation of SOLID](../assests/the_failures_of_inheritance_3.svg)
+![Violation of SOLID](../assets/the_failures_of_inheritance/the_failures_of_inheritance_3.svg)
 
 From this we can easily note some violations of I in SOLID. A wild seal or cat won't play fetch, cat's also refuse to swim and lastly for one final example A worm can't breath it passively absorbs oxygen through spiricles.
 
@@ -44,7 +44,7 @@ Not all animals walk, run, dig, crawl, swim, play fetch or even breath
 
 Here's one possible solution
 
-![Wet Code Minimal Inheritance](../assests/the_failures_of_inheritance_4.svg)
+![Wet Code Minimal Inheritance](../assets/the_failures_of_inheritance/the_failures_of_inheritance_4.svg)
 
 As demonstrated this is a tough one to refactor whilst keeping the same class hierarchy. This refactor can be taken further but it increasingly abstracts the problem.
 
@@ -54,7 +54,7 @@ For example a class containing walk and run could be used for Dog and Cat but th
 
 For this we can use interfaces and get closer to our end goal of modelling animals. However our code would still be wet.
 
-![Better Inheritance](../assests/the_failures_of_inheritance_5.svg)
+![Better Inheritance](../assets/the_failures_of_inheritance/the_failures_of_inheritance_5.svg)
 
 Whilst this may look more chaotic it is clear that this approach has increased flexiblity and less abstraction allowing for better focus on the coding problem at hand.
 
@@ -78,7 +78,7 @@ So what we have above is a conveluted mess. The focus on abstraction has taken p
 
 In the lense of what we are looking at here composition would define common behaviours as interfaces. C# supports mutiple interface inheritance.
 
-![Composition](../assests/the_failures_of_inheritance_6.svg)
+![Composition](../assets/the_failures_of_inheritance/the_failures_of_inheritance_6.svg)
 
 In this example here we can simply add and remove the functionality that each animal has with its respective components. Each component can have many concrete implementations or default implementations that can be subsititued into each class providing maximum re-use and flexibility to the design.
 
