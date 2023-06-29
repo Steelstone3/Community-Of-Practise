@@ -38,7 +38,7 @@ Isn't that one frustrating so you try to fix the merge conflict completing it bu
 
 Relax...
 
-> git reset --hard origin/your_branch --force
+> git reset --hard origin/your_branch
 
 ## Git Rebase --abort As A Merge Conflict Disaster Recovery
 
