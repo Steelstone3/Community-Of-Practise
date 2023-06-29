@@ -6,10 +6,13 @@ Git has a "bag of tricks" that we can use for "development without fear".
 
 Lets look at
 
-> Confidence for making design decision
-> Disaster recovery from a poor design decision
-> Disaster recovery from a rebase attempt
-> Disaster recovery from a completed rebase/ broken local build
+> * Confidence for making design decision
+>
+> * Disaster recovery from a poor design decision
+>
+> * Disaster recovery from a rebase attempt
+>
+> * Disaster recovery from a completed rebase/ broken local build
 
 ## Commits As "Checkpoints"
 
