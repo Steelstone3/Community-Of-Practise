@@ -16,7 +16,7 @@ Lets look at
 
 ## Commits As "Checkpoints"
 
-> git commit -m "Implemented dive stage controller"
+> git commit -m "Implemented some successful design"
 
 Sometimes when developing code you'll hit a fork in the road where you are unsure as to what design direction to take from here on in.
 
