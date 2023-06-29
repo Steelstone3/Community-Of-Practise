@@ -24,11 +24,11 @@ If the design however is fit for purpose and maybe needs some optimisation.
 
 So you've developed a piece of work that you are really happy with and you push it but it comes back with "merge conflicts"...
 
-Isn't that one frustrating so you try to fix the merge conflict and you only got 5 hours sleep because of the neighbours cat and you did some other things (but NOT git push --force) to your branch and now you are in a total mess and completely paniced and don't know how to proceed...
+Isn't that one frustrating so you try to fix the merge conflict completing it but the branch you now have doesn't work, you only got 5 hours sleep because of the neighbours cat and you did some other things (but NOT git push --force) to your branch and now you are in a total mess and completely paniced and don't know how to proceed...
 
 Relax...
 
-> git reset origin/your_branch --force
+> git reset --hard origin/your_branch --force
 
 ## Git Rebase --abort As A Merge Conflict Disaster Recovery
 
