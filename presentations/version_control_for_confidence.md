@@ -34,6 +34,10 @@ When making changes to the codebase be aware others will be doing the same. Smal
 
 Keeping your branch up to date means that you are less likely to run into big merge conflicts as less changes will have taken place around you on the main branch. Rebase your branch once or twice a day.
 
+### Push compiling changes only
+
+Pushing changes that compile is a good idea as it provides a known state with running tests and application that can be tested. It also provides for disaster recovery where a broken local branch can be restored from the compiling remote branch.
+
 ### Merge often
 
 The develop branch is named as so as it is where development is taking place i.e we don't expect everything to work. We can therefore take an iterative development approach. For example in the case of a new feature it is perfectly ok to split up the feature into its requirements and merge each of these separately as its own piece of work to follow the above outlined guidance instead of aiming to try and merge the feature as one large scope of change.
