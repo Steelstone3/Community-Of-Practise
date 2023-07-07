@@ -14,6 +14,28 @@ Lets look at
 >
 > * Disaster Recovery From A Broken Local Branch
 
+## General Rules
+
+### Commit often
+
+Committing often ensures you make incremental and easy to understand progress. It ensures that we loose less progress when rolling back and a better understanding of what we are rolling back to.
+
+### Descriptive commit messages
+
+"update" or "made changes" doesn't tell you anything when making a commit and you will soon forget (within an hour) what the commits purpose was and what state it would roll you back to should you need to. Write a quick description describing the incremental step "implemented ___ service".
+
+### Small surface area 
+
+When making changes to the codebase be aware others will be doing the same. Smaller change surface area will ensure you are less likely to run into merge conflicts. If you see changes that "must be made" make a note and tidy them up on a separate branch later.
+
+### Rebase often 
+
+Keeping your branch up to date means that you are less likely to run into big merge conflicts as less changes will have taken place around you on the main branch. Rebase your branch once or twice a day.
+
+### Merge often
+
+The develop branch is named as so as it is where development is taking place i.e we don't expect everything to work. We can therefore take an iterative development approach. For example in the case of a new feature it is perfectly ok to split up the feature into its requirements and merge each of these separately as its own piece of work to follow the above outlined guidance instead of aiming to try and merge the feature as one large scope of change.
+
 ## Commits As "Checkpoints" - Confidence For Making Design Decisions
 
 > git commit -m "Implemented some successful design"
