@@ -20,7 +20,7 @@ Treat the following as general guidance for version control.
 
 ### Commit often
 
-Committing often ensures you make incremental and easy to understand progress. It ensures that we loose less progress when rolling back and a better understanding of what we are rolling back to.
+Committing often ensures you make incremental and easy to understand progress. It ensures that we lose less progress when rolling back and a better understanding of what we are rolling back to.
 
 ### Descriptive commit messages
 
